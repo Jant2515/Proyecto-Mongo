@@ -68,16 +68,18 @@ function navBar()
                   <li class="has-children">
                     <a href="View/destination.php">Destinations</a>
                     <ul class="dropdown">
-                      <li><a href="#">Japan</a></li>
-                      <li><a href="#">Europe</a></li>
-                      <li><a href="#">China</a></li>
-                      <li><a href="#">France</a></li>
+                      <li><a href="View/ParquesNacio.php">Parques Nacionales</a></li>
+                      <li><a href="#">Playas</a></li>
+                      <li><a href="#">Hoteles</a></li>
+                      <li><a href="#">Cabañas</a></li>
+                      <li><a href="#">Hostels</a></li>
                     </ul>
                   </li>
                   <li><a href="View/discount.php">Discount</a></li>
                   <li><a href="View/about.php">About</a></li>
                   <li><a href="View/blog.php">Blog</a></li>
                   <li><a href="View/contact.php">Contact</a></li>
+                  <li><a href="View/login.php">Login</a></li>
                   <!-- <li><a href="booking.html">Book Online</a></li> -->
                 </ul>
               </nav>
@@ -133,16 +135,18 @@ function navBar2()
                   <li class="has-children">
                     <a href="destination.php">Destinations</a>
                     <ul class="dropdown">
-                      <li><a href="#">Japan</a></li>
-                      <li><a href="#">Europe</a></li>
-                      <li><a href="#">China</a></li>
-                      <li><a href="#">France</a></li>
+                    <li><a href="ParquesNacio.php">Parques Nacionales</a></li>
+                    <li><a href="#">Playas</a></li>
+                    <li><a href="#">Hoteles</a></li>
+                    <li><a href="#">Cabañas</a></li>
+                    <li><a href="#">Hostels</a></li>
                     </ul>
                   </li>
                   <li><a href="discount.php">Discount</a></li>
                   <li><a href="about.php">About</a></li>
                   <li><a href="blog.php">Blog</a></li>
                   <li><a href="contact.php">Contact</a></li>
+                  <li><a href="login.php">Login</a></li>
                   <!-- <li><a href="booking.php">Book Online</a></li> -->
                 </ul>
               </nav>

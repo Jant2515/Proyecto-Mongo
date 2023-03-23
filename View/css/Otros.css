@@ -1,0 +1,53 @@
+.TD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 280px;
+    margin: 0 15px;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    ;
+}
+
+.pie {
+    display: flex;
+    background: #ef6c57;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pie a {
+    text-decoration: white;
+    color: white;
+}
+
+.pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+
+}
+
+.Img3 {
+    width: 260px;
+    height: 222px;
+    float: center;
+    padding: 15px;
+}

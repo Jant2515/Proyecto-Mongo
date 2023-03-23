@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/DestinosCR-Mongo/Proyecto-Mongo/vendor/autoload.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/Proyecto-Mongo/vendor/autoload.php";
 class Conexion {
 
     public static function conectar() {
