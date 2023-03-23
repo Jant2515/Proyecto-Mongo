@@ -68,12 +68,12 @@ function navBar()
                   <li class="has-children">
                     <a href="View/destination.php">Destinations</a>
                     <ul class="dropdown">
-                      <li><a href="View/ParquesNacio.php">Parques Nacionales</a></li>
-                      <li><a href="View/Playas.php">Playas</a></li>
-                      <li><a href="View/Hoteles.php">Hoteles</a></li>
-                      <li><a href="View/Cabañas.php>Cabañas</a></li>
-                      <li><a href="View/Hostels.php">Hostels</a></li>
-                    </ul>
+                    <li><a href="View/ParquesNacio.php">Parques Nacionales</a></li>
+                    <li><a href="View/Playas.php">Playas</a></li>
+                    <li><a href="View/Hoteles.php">Hoteles</a></li>
+                    <li><a href="View/Cabañas.php">Cabañas</a></li>
+                    <li><a href="View/Hostels.php">Hostels</a></li>
+                  </ul>
                   </li>
                   <li><a href="View/discount.php">Discount</a></li>
                   <li><a href="View/about.php">About</a></li>
@@ -130,7 +130,7 @@ function navBar2()
               <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                   <li class="active">
-                    <a href="index.php">Home</a>
+                    <a href="../index.php">Home</a>
                   </li>
                   <li class="has-children">
                     <a href="destination.php">Destinations</a>
@@ -138,7 +138,7 @@ function navBar2()
                     <li><a href="ParquesNacio.php">Parques Nacionales</a></li>
                     <li><a href="Playas.php">Playas</a></li>
                     <li><a href="Hoteles.php">Hoteles</a></li>
-                    <li><a href="Cabañas.php>Cabañas</a></li>
+                    <li><a href="Cabañas.php">Cabañas</a></li>
                     <li><a href="Hostels.php">Hostels</a></li>
                     </ul>
                   </li>

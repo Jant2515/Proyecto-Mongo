@@ -35,8 +35,8 @@ include_once __DIR__ . '\generales.php';
                     <input id="radio5" type="radio" name="estrellas" value="1">
                     <label for="radio5">★</label>
                 </p>
-                <a href="#" class="card-link" >Enviar</a>
-                <a href="#" class="card-link" >Salir</a>
+                <a href="destination.php" class="card-link" >Enviar</a>
+                <a href="destination.php" class="card-link" >Salir</a>
             </div>
         </div>
     </div>
