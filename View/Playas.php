@@ -18,8 +18,8 @@
  <body>
 
      <br>
-     <img src="images/nationalPark.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
-     <H1 style="text-align: center;color:black;">Parques Nacionales</H1>
+     <img src="images/beach.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+     <H1 style="text-align: center;color:black;">Playas</H1>
      <h3 style="text-align: center;">Las mejores puntuaciones que veras</h3>
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
@@ -56,7 +56,7 @@
              <img class="Img3" src="images/01-greece.jpg" alt="muestra">
              <p style="display: flex; justify-content:center;">dwdwdwdw</p>
              <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
+                 <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
          </div>
@@ -69,7 +69,7 @@
              <img class="Img3" src="images/01-greece.jpg" alt="muestra">
              <p style="display: flex; justify-content:center;"></p>
              <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
+                 <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
          <div class="tarjeta">
@@ -77,7 +77,7 @@
              <img class="Img3" src="images/01-greece.jpg" alt="muestra">
              <p style="display: flex; justify-content:center;"></p>
              <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
+                 <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
          <div class="tarjeta">
@@ -85,7 +85,7 @@
              <img class="Img3" src="images/01-greece.jpg" alt="muestra">
              <p style="display: flex; justify-content:center;"></p>
              <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
+                 <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
 
@@ -94,7 +94,7 @@
              <img class="Img3" src="images/01-greece.jpg" alt="muestra">
              <p style="display: flex; justify-content:center;"></p>
              <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
+                 <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
          </div>

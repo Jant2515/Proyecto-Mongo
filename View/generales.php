@@ -69,10 +69,10 @@ function navBar()
                     <a href="View/destination.php">Destinations</a>
                     <ul class="dropdown">
                       <li><a href="View/ParquesNacio.php">Parques Nacionales</a></li>
-                      <li><a href="#">Playas</a></li>
-                      <li><a href="#">Hoteles</a></li>
-                      <li><a href="#">Cabañas</a></li>
-                      <li><a href="#">Hostels</a></li>
+                      <li><a href="View/Playas.php">Playas</a></li>
+                      <li><a href="View/Hoteles.php">Hoteles</a></li>
+                      <li><a href="View/Cabañas.php>Cabañas</a></li>
+                      <li><a href="View/Hostels.php">Hostels</a></li>
                     </ul>
                   </li>
                   <li><a href="View/discount.php">Discount</a></li>
@@ -136,10 +136,10 @@ function navBar2()
                     <a href="destination.php">Destinations</a>
                     <ul class="dropdown">
                     <li><a href="ParquesNacio.php">Parques Nacionales</a></li>
-                    <li><a href="#">Playas</a></li>
-                    <li><a href="#">Hoteles</a></li>
-                    <li><a href="#">Cabañas</a></li>
-                    <li><a href="#">Hostels</a></li>
+                    <li><a href="Playas.php">Playas</a></li>
+                    <li><a href="Hoteles.php">Hoteles</a></li>
+                    <li><a href="Cabañas.php>Cabañas</a></li>
+                    <li><a href="Hostels.php">Hostels</a></li>
                     </ul>
                   </li>
                   <li><a href="discount.php">Discount</a></li>
