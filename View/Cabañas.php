@@ -4,8 +4,8 @@
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
     require_once "./../Model/cabana.php";
-    $cabana = new cabana();
-    $datos = $cabana->mostrarDatos();
+    $crud = new Crud();
+    $datos = $crud->mostrarDatos();
 ?>
 
  <head>

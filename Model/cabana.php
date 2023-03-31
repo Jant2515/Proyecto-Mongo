@@ -1,5 +1,5 @@
 <?php
-class cabana {
+class Crud {
 
     public function mostrarDatos() {
 
