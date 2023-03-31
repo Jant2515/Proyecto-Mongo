@@ -2,6 +2,10 @@
  <html lang="en">
  <?php
     include_once __DIR__ . '\generales.php';
+    require_once "./../Model/conexion.php";
+    require_once "./../Model/parquenac.php";
+    $parque = new parque();
+    $datos = $parque->mostrarDatos();
     ?>
 
  <head>
@@ -25,79 +29,21 @@
      <br>
      <br>
      <form action="Post" class="TD">
+     <?php
+        foreach($datos as $item) {
+     ?>
 
          <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;">dwdwdwdw </p>
+             <div class="titulo"><?php echo $item->nombre; ?></div>
+             <img class="Img3" src="<?php echo $item->imagen; ?>" alt="muestra">
+             <p style="display: flex; justify-content:center;"><?php echo $item->descripcion; ?> </p>
              <div class="pie">
                  <a href="calificacion.php">Puntuar Lugar</a>
              </div>
          </div>
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;">wdwdwdwd</p>
-             <div class="pie">
-              <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;">dwdwdwdwd</p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;">dwdwdwdw</p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-         </div>
-     </form>
-     <br>
-     <form action="Post" class="TD">
-
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;"></p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;"></p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;"></p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-
-         <div class="tarjeta">
-             <div class="titulo">Grecia</div>
-             <img class="Img3" src="images/01-greece.jpg" alt="muestra">
-             <p style="display: flex; justify-content:center;"></p>
-             <div class="pie">
-                  <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
-         </div>
-         </div>
+     <?php
+        }
+     ?>
      </form>
      <br>
      <footer>

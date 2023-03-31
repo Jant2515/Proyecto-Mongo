@@ -1,5 +1,5 @@
 <?php
-class cabana {
+class hostel {
 
     public function mostrarDatos() {
 
@@ -7,7 +7,7 @@ class cabana {
 
             $conexion = Conexion::conectar();
             
-            $coleccion = (new MongoDB\Client)->DestinosCR->Cabanas;
+            $coleccion = (new MongoDB\Client)->DestinosCR->Hostel;
 
             $datos = $coleccion->find();
 
