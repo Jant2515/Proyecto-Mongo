@@ -29,9 +29,9 @@ include_once __DIR__ . '\View\generales.php';
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               
 
-              <h1 class="text-white font-weight-light">Never Stop Exploring</h1>
-              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.</p>
-              <p><a href="#" class="btn btn-primary py-3 px-5 text-white">Book Now!</a></p>
+              <h1 class="text-white font-weight-light">Nunca dejes de explorar</h1>
+              <p class="mb-5">Visita Costa Rica el pais del pura vida</p>
+              <p><a href="#" class="btn btn-primary py-3 px-5 text-white">Reservar!</a></p>
 
             </div>
           </div>
@@ -43,9 +43,9 @@ include_once __DIR__ . '\View\generales.php';
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="text-white font-weight-light">Love The Places</h1>
-              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.</p>
-              <p><a href="#" class="btn btn-primary py-3 px-5 text-white">Book Now!</a></p>
+              <h1 class="text-white font-weight-light">Lugares que amaste</h1>
+              <p class="mb-5">Danos tu reseña del viaje</p>
+              <p><a href="View/destination.php" class="btn btn-primary py-3 px-5 text-white">Ver!</a></p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ include_once __DIR__ . '\View\generales.php';
             <a href="#" class="unit-1 text-center">
               <img src="View/images/img_2.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <h3 class="unit-1-heading">Write Down Your Experience</h3>
+                <h3 class="unit-1-heading">Escríbenos tus experiencias</h3>
               </div>
             </a>
           </div>
@@ -71,7 +71,7 @@ include_once __DIR__ . '\View\generales.php';
             <a href="#" class="unit-1 text-center">
               <img src="View/images/img_1.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <h3 class="unit-1-heading">Explore Asian Mountains</h3>
+                <h3 class="unit-1-heading">Explora Parque Nacionales</h3>
               </div>
             </a>
           </div>

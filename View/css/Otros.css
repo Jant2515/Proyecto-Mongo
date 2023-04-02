@@ -1,12 +1,8 @@
-.TD {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .tarjeta {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 280px;
     margin: 0 15px;
     text-align: center;

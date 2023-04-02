@@ -20,20 +20,18 @@
  <link rel="stylesheet" href="css/Otros.css">
 
  <body>
-
-     <br>
      <img src="images/Cabina.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
      <H1 style="text-align: center;color:black;">Cabañas</H1>
      <h3 style="text-align: center;">Las mejores puntuaciones que veras</h3>
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
-     <br>
-     <form action="Post" class="TD">
+    
+     <form action="Post" class="TD" style="flex-wrap: wrap; margin-top: 20px;">
      <?php
         foreach($datos as $item) {
      ?>
 
-         <div class="tarjeta">
+         <div class="tarjeta" style="margin-top: 20px;">
              <div class="titulo"><?php echo $item->nombre; ?></div>
              <img class="Img3" src="<?php echo $item->imagen; ?>" alt="muestra">
              <p style="display: flex; justify-content:center;"><?php echo $item->descripcion; ?> </p>
