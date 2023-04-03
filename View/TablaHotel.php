@@ -9,7 +9,8 @@
     $crud = new Crud();
     $datos = $crud->mostrarDatos();
     $crud1 = new eliminar();
-    
+    $crud2 = new Editar();
+
 ?>
 
 <head>
@@ -20,7 +21,8 @@
 
 <body>
 
-
+<form action="../Controller/hoteles.php" method="POST">
+<input type="text" hidden value="<?php echo $idMongo?>" name="id"> 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -34,18 +36,19 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nombre</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="nombre" value="<?php echo $datos->nombre?>">
           </div>
           <div class="form-group">
           <label for="recipient-name" class="col-form-label">Ruta imagen</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="imagen" value="<?php echo $datos->imagen?>">
           </div>
           <div class="form-group">
           <label for="recipient-name" class="col-form-label">Descripcion</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="descripcion" value="<?php echo $datos->descripcion?>">
           </div>
         </form>
       </div>
+      </form>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Guardar</button>
@@ -79,8 +82,10 @@
                     <td><?php echo $item->descripcion; ?></td>
                     <td>
                         <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Editar</button>                        </div>
-                    </td>
+                          <form  action="../Model/hoteles.php" method="POST">
+                        <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
+                        <button type="button"  name="id" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Editar</button>                        </div>
+                    </form></td>
                     <td>
                      
                         <div class="btn-group pull-right">
