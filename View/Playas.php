@@ -19,7 +19,6 @@
  <link rel="stylesheet" href="css/Otros.css">
 
  <body>
-
      <br>
      <img src="images/beach.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
      <H1 style="text-align: center;color:black;">Playas</H1>
@@ -32,7 +31,7 @@
         foreach($datos as $item) {
      ?>
 
-         <div class="tarjeta" style="margin-top: 20px;">
+         <div class="tarjeta" style="margin-top: 20px; display: inline-block;">
              <div class="titulo"><?php echo $item->nombre; ?></div>
              <img class="Img3" src="<?php echo $item->imagen; ?>" alt="muestra">
              <p style="display: flex; justify-content:center;"><?php echo $item->descripcion; ?> </p>
