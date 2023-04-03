@@ -1,47 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <?php
+<?php
+
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
     require_once "./../Model/hoteles.php";
     $crud = new Crud();
     $datos = $crud->mostrarDatos();
+    $crud1 = new eliminar();
+    
+?>
+
+<head>
+  <?php
     links2();
- function obtenerDocumento($id) {
-        try {
-            $conexion = Conexion::conectar();
-            $coleccion = $conexion->personas;
-            $datos = $coleccion->findOne(
-                                    array(
-                                        '_id' => new MongoDB\BSON\ObjectId($id)
-                                    )
-                                );
-            return $datos;
-        } catch (\Throwable $th) {
-            return $th->getMessage();
-        }
-    }
-
-
- function eliminar($id) {
-        try {
-            $conexion = Conexion::conectar();
-            $coleccion = $conexion->personas;
-            $respuesta = $coleccion->deleteOne(
-                                        array(
-                                            "_id" => new MongoDB\BSON\ObjectId($id)
-                                        )
-                                    );
-            return $respuesta;
-        } catch (\Throwable $th) {
-            return $th->getMessage();
-        }
-    }
-    ?>
-
-
+  ?>
 </head>
 
 <body>
@@ -111,7 +85,7 @@
                      
                         <div class="btn-group pull-right">
                         <form action="../Controller/Elimina.php" method="POST">
-                        <input type="text" name="id" value="<?php echo $datos->_id; ?>" hidden>
+                        <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
                         <button class="btn btn-danger">
                             <i class="fa-solid fa-user-xmark"></i> Eliminar
                         </button>

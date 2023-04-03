@@ -1,4 +1,6 @@
-<?php
+<?php 
+    session_start();
+
     include "../Model/conexion.php";
     include "../Model/hoteles.php";
     $crud = new eliminar();
