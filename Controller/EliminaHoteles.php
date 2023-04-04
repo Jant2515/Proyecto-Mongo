@@ -3,6 +3,7 @@
 
     include "../Model/conexion.php";
     include "../Model/hoteles.php";
+    
     $crud = new eliminar();
     $id = $_POST['id'];
 

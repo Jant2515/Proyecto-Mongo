@@ -2,6 +2,8 @@
     require_once "./../Model/conexion.php";
     require_once "./../Model/playas.php";
 
+
+    
     $Crud = new inserta();
 
     $datos = array(

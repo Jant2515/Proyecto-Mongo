@@ -5,7 +5,7 @@
 
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
-    require_once "./../Model/hoteles.php";
+    require_once "./../Model/cabana.php";
     $crud = new Crud();
     $datos = $crud->mostrarDatos();
     $crud1 = new eliminar();
@@ -21,7 +21,7 @@
 
 <body>
 
-<form action="../Controller/EditarHoteles.php" method="POST">
+<form action="../Controller/EditarCabanas.php" method="POST">
 <input type="text" hidden value="<?php echo $idMongo?>" name="id"> 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -82,14 +82,14 @@
                     <td><?php echo $item->descripcion; ?></td>
                     <td>
                         <div class="btn-group pull-right">
-                          <form  action="../Model/hoteles.php" method="POST">
+                          <form  action="../Model/cabana.php" method="POST">
                         <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
                         <button type="button"  name="id" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Editar</button>                        </div>
                     </form></td>
                     <td>
                      
                         <div class="btn-group pull-right">
-                        <form action="../Controller/EliminaHoteles.php" method="POST">
+                        <form action="../Controller/EliminaCabanas.php" method="POST">
                         <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
                         <button class="btn btn-danger">
                             <i class="fa-solid fa-user-xmark"></i> Eliminar

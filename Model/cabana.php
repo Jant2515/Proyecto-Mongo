@@ -34,6 +34,74 @@ class inserta{
             return $th->getMessage();
         }
     }
+}
+
+class eliminar{
+
+    public function obtenerDocumento($id) {
+        try {
+            $conexion = Conexion::conectar();
+            $coleccion = (new MongoDB\Client)->DestinosCR->Cabanas;
+            $datos = $coleccion->findOne(
+                                    array(
+                                        '_id' => new MongoDB\BSON\ObjectId($id)
+                                    )
+                                );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+    
+    public function eliminar($id) {
+        try {
+            $conexion = Conexion::conectar();
+            $coleccion = (new MongoDB\Client)->DestinosCR->Cabanas;
+            $respuesta = $coleccion->deleteOne(
+                                        array(
+                                            "_id" => new MongoDB\BSON\ObjectId($id)
+                                        )
+                                    );
+            return $respuesta;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+}
+
+class Editar{
+
+
+    public function obtenerDocumento($id) {
+        try {
+            $conexion = Conexion::conectar();
+            $coleccion = (new MongoDB\Client)->DestinosCR->Cabanas;
+            $datos = $coleccion->findOne(
+                                    array(
+                                        '_id' => new MongoDB\BSON\ObjectId($id)
+                                    )
+                                );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
     }
 
+    public function actualizar($id, $datos) {
+        try {
+            $conexion = Conexion::conectar();
+            $coleccion = (new MongoDB\Client)->DestinosCR->Cabanas;
+            $respuesta = $coleccion->updateOne(
+                                        ['_id' => new MongoDB\BSON\ObjectId($id)],
+                                        [
+                                            '$set' => $datos    
+                                        ]
+                                    );
+            return $respuesta;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+}
 ?>
