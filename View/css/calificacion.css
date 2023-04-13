@@ -18,4 +18,4 @@ p.clasificacion {
   p.clasificacion label:hover ~ label,
   p.clasificacion input:checked ~ label {
     color: #F2784B;
-  }
+}

@@ -62,6 +62,7 @@
         </section>
         </form>
         <br>
+        <br><br><br><br><br>
         <footer>
             <?php
             Footer2();
