@@ -4,6 +4,11 @@
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
     require_once "./../Model/cabana.php";
+    
+    $crud = new Editar();
+    $id = $POST['id'];
+    $datos = $crud->obtenerDocumento($id);
+    $idMongo = datos->_id;
 ?>
  <head>
      <?php
@@ -33,21 +38,21 @@
                                             <h2 class="fw-bold mb-2 text-uppercase">Editar Cliente</h2>
                                         </h2>
                                         <p class="text-black-50 mb-5">Edite los datos necesarios</p>
-                                        <input type="hidden" value="<?php echo $_id?>" id="idCli" name="idCli">
+                                        <input type="hidden" value="<?php echo $idMongo?>" id="id" name="id">
                                         <div class="form-outline form-white  mb-4">
                                             <label for="inputPassword4" class="form-label">Nombre</label>
                                             <input type="text" class="form-control" id="nombre"
-                                                name="nombre" value="<?php echo $nombre?>">
+                                                name="nombre" value="<?php echo $datos->nombre?>">
                                         </div>
                                         <div class="form-outline form-white  mb-4">
                                             <label for="inputEmail4" class="form-label">Ruta Imagen</label>
                                             <input type="text" class="form-control" id="imagen" name="imagen"
-                                            value="<?php echo $imagen?>">
+                                            value="<?php echo $datos->imagen?>">
                                         </div>
                                         <div class="form-outline form-white  mb-4">
                                             <label for="inputPassword4" class="form-label">Descripcion</label>
                                             <input type="text" class="form-control" id="descipcion"
-                                                name="descipcion" value="<?php echo $descipcion?>">
+                                                name="descipcion" value="<?php echo $datos->descripcion?>">
                                         </div>
                                         <button type="submit" class="btn btn-outline-danger btn-lg px-5"
                                             name="btnConfirmar">Confirmar Cambios</button>
@@ -60,6 +65,11 @@
             </div>
         </section>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <footer>
             <?php
             Footer2();
@@ -71,4 +81,3 @@
         ?>  
   </body>
 </html>
-    
