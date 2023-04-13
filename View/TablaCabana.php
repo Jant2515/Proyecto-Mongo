@@ -41,9 +41,9 @@
                     <td><?php echo $item->imagen; ?></td>
                     <td><?php echo $item->descripcion; ?></td>
                     <td>
-                    <form  action="./EditarCabana.php" method="POST">
+                    <form  action="" method="POST">
                         <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
-                        <a><button type="button"  name="id" class="btn btn-outline-warning">Editar</button></a>
+                        <a  action="POST" type="button" href="EditarCabana.php"  name="id" class="btn btn-outline-warning">Editar</a>
                     </form>
                     </td>
                     <td>
