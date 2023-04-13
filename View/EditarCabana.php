@@ -6,9 +6,9 @@
     require_once "./../Model/cabana.php";
     
     $crud = new Editar();
-    $id = $POST['id'];
+    $id = $_POST['id'];
     $datos = $crud->obtenerDocumento($id);
-    $idMongo = datos->_id;
+    $idMongo = $datos->_id;
 ?>
  <head>
      <?php
