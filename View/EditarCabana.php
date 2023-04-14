@@ -32,7 +32,7 @@
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                         <div class="card bg-light text-black" style="border-radius: 1rem;">
                             <div class="card-body p-5 text-center">
-                            <form action="./procesos/actualizar.php" method="POST">
+                            <form action="./../Controller/EditarCabanas.php" method="POST">
 						        <input type="text" hidden value="<?php echo $idMongo ?>" name="id">
 						        <label for="nombre">Nombre</label>
 						        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $datos->nombre ?>">
