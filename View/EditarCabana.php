@@ -40,7 +40,7 @@
 						        <input type="text" class="form-control" id="imagen" name="imagen" value="<?php echo $datos->imagen ?>">
 						        <label for="descripcion">Descripcion</label>
 						        <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $datos->descripcion ?>">
-						        <button class = "btn btn-outline-success">Actualizar
+						        <button style="margin-top:10px"  class = "btn btn-outline-success">Actualizar
 						        </button>
 					        </form>
                             </div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </section>
-        <footer style="margin-top: 500px;">
+        <footer>
             <?php
             Footer2();
             ?>
