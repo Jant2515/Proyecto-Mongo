@@ -18,6 +18,10 @@
 </head>
 
 <body>
+
+<?php
+        navBarAdmin();
+        ?>
     <table class="table" style="margin-top: 50px;">
 
         <thead>
@@ -63,7 +67,14 @@
             ?>
         </tbody>
     </table>
-
+    <footer>
+            <?php
+            Footer2();
+            ?>
+        </footer>
+        <?php
+        allLinks2();
+        ?>
 </body>
 
 </html>

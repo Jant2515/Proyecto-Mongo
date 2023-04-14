@@ -17,7 +17,9 @@
 </head>
 
 <body>
-
+<?php
+    navBarAdmin();
+    ?>
     <table class="table" style="margin-top: 50px;">
 
         <thead>
@@ -63,7 +65,10 @@
             ?>
         </tbody>
     </table>
-
+    <?php
+            Footer2();
+            ?>
+        </footer>
 </body>
 
 </html>
