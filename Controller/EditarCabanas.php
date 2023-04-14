@@ -3,7 +3,7 @@
     include "../Model/cabana.php";
 
     $Crud = new Editar();
-
+    
     $id = $_POST['id'];
     $datos = array(
         "nombre" => $_POST['nombre'],

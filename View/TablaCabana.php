@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
+<?php session_start();
 
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
     require_once "./../Model/cabana.php";
     $crud = new Crud();
     $datos = $crud->mostrarDatos();
-    $crud1 = new eliminar();
 ?>
 
 <head>
@@ -41,10 +40,11 @@
                     <td><?php echo $item->imagen; ?></td>
                     <td><?php echo $item->descripcion; ?></td>
                     <td>
-                    <form  action="" method="POST">
-                        <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
-                        <a  action="POST" type="button" href="EditarCabana.php"  name="id" class="btn btn-outline-warning">Editar</a>
-                    </form>
+                    <form action="./EditarCabana.php" method="POST">
+						<input type="text" hidden value="<?php echo $item->_id ?>" name="id">
+						<button class="btn btn-outline-warning">Editar
+						</button>
+					</form>
                     </td>
                     <td>
                      
