@@ -1,35 +1,19 @@
 <?php
 
 class Login{
-    public function EncontrarUsuario($usuario){
+    public function EncontrarUsuario($Correo){
     try{
     $conexion = Conexion::conectar();
-    $coleccion = (new MongoDB\Client)->DestinosCR->Usuario;
+    $coleccion = (new MongoDB\Client)->DestinosCR->Usuarios;
     // Buscar el usuario en la base de datos
-    $usuarioEncontrado = $coleccion->findOne(
-   array('Username' => new MongoDB\BSON\ObjectId ($usuario)));
-    return $usuarioEncontrado;
+    $usuarioEncontrado = $coleccion->findOne(['Correo' => $Correo]);
+     return $usuarioEncontrado;
 
 } catch (\Throwable $th) {
     return $th->getMessage();
 
 }
     }
-
-    public function EncontrarContra($contrasena){
-        try{
-        $conexion = Conexion::conectar();
-        $coleccion = (new MongoDB\Client)->DestinosCR->Usuario;
-        // Buscar el usuario en la base de datos
-        $contraEncontrado = $coleccion->findOne(
-       array('password' => new MongoDB\BSON\ObjectId ($contrasena)));
-        return $contraEncontrado;
-    
-    } catch (\Throwable $th) {
-        return $th->getMessage();
-    
-    }
-        }
 }    
   
     

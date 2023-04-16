@@ -30,8 +30,8 @@
 		<div class="login">
 			<form action="../Controller/UsuarioController.php" method="POST">
 				<label for="chk" aria-hidden="true">Login</label>
-				<input type="text" name="usuario" placeholder="usuario" required="">
-				<input type="password" name="contrasena" placeholder="contrasena" required="">
+				<input type="text" id="Correo" name="Correo" placeholder="Correo" required="">
+				<input type="text" id="Contrasena" name="Contrasena" placeholder="Contrasena" required="">
 				<input type="submit" value="Iniciar sesión">
 			</form>
 		</div>
