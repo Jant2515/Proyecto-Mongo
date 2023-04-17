@@ -25,7 +25,7 @@ class inserta{
             return $th->getMessage();
         }
     }
-    }
+}
 
 class eliminar{
     

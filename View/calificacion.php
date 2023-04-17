@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include_once __DIR__ . '\generales.php';
+    include_once __DIR__ . '\generales.php';
+    include "./../Model/conexion.php";
+    include "./../Model/calificaciones.php";
+
+	$Lugar = $_POST['Lugar'];
 ?>
 
 <head>
@@ -23,20 +27,24 @@ include_once __DIR__ . '\generales.php';
             <div class="card-body">
                 <h5 class="card-title">Puntuacion</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Envianos tu puntuacion</h6>
-                <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5">
-                    <label for="radio1">★</label>
-                    <input id="radio2" type="radio" name="estrellas" value="4">
-                    <label for="radio2">★</label>
-                    <input id="radio3" type="radio" name="estrellas" value="3">
-                    <label for="radio3">★</label>
-                    <input id="radio4" type="radio" name="estrellas" value="2">
-                    <label for="radio4">★</label>
-                    <input id="radio5" type="radio" name="estrellas" value="1">
-                    <label for="radio5">★</label>
-                </p>
-                <a href="destination.php" class="card-link" >Enviar</a>
-                <a href="destination.php" class="card-link" >Salir</a>
+                <form action="../Controller/Calificaciones.php" method="POST">
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                        <input id="Lugar" type="text" name="Lugar" value="<?php echo $Lugar?>" hidden>
+                    </p>
+                    <button href="destination.php" class="card-link" >Enviar</button>
+                    
+                </form>
+                <a href="destination.php" class="card-link" >Salir</a> 
             </div>
         </div>
     </div>

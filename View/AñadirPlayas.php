@@ -24,7 +24,7 @@
             <img src="images/content-bg.jpg" alt="">
         </div>
         <!-- Editar CITA NUEVA -->
-        <form action="../Controller/Inserta.php" method="post">
+        <form action="../Controller/InsertaPlayas.php" method="post">
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">

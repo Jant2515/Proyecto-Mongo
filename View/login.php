@@ -18,10 +18,10 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 		<div class="signup">
-			<form>
+			<form action="../Controller/RegistrarUsuario.php" method="POST">
 				<label for="chk" aria-hidden="true">Sign up</label>
 				<input type="email" name="email" placeholder="Email" required="">
-				<input type="password" name="pswd" placeholder="Password" required="">
+				<input type="password" name="password" placeholder="Password" required="">
 				<button>Sign up</button>
 			</form>
 		</div>
@@ -30,8 +30,8 @@
 			<form action="../Controller/UsuarioController.php" method="POST">
 				<label for="chk" aria-hidden="true">Login</label>
 				<input type="text" id="Correo" name="Correo" placeholder="Correo" required="">
-				<input type="text" id="Contrasena" name="Contrasena" placeholder="Contrasena" required="">
-				<input type="submit" value="Iniciar sesión">
+				<input type="password" id="Contrasena" name="Contrasena" placeholder="Contrasena" required="">
+				<button>Log in</button>
 			</form>
 		</div>
 	</div>
