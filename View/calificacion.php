@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    include_once __DIR__ . '\generales.php';
-    include "./../Model/conexion.php";
-    include "./../Model/calificaciones.php";
+include_once __DIR__ . '\generales.php';
+include "./../Model/conexion.php";
+include "./../Model/calificaciones.php";
 
-	$Lugar = $_POST['Lugar'];
+$Lugar = $_POST['Lugar'];
 ?>
 
 <head>
@@ -39,12 +39,11 @@
                         <label for="radio4">★</label>
                         <input id="radio5" type="radio" name="estrellas" value="1">
                         <label for="radio5">★</label>
-                        <input id="Lugar" type="text" name="Lugar" value="<?php echo $Lugar?>" hidden>
+                        <input id="Lugar" type="text" name="Lugar" value="<?php echo $Lugar ?>" hidden>
                     </p>
-                    <button href="destination.php" class="card-link" >Enviar</button>
-                    
+                    <button class="btn btn btn-danger" href="destination.php" class="card-link">Salir</button>
+                    <button class="btn btn-info" href="destination.php" class="card-link">Enviar</button>
                 </form>
-                <a href="destination.php" class="card-link" >Salir</a> 
             </div>
         </div>
     </div>
@@ -61,4 +60,5 @@
 allLinks2();
 ?>
 </body>
+
 </html>
