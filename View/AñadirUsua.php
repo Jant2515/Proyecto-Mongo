@@ -1,23 +1,24 @@
 <!DOCTYPE html>
- <html lang="en">
- <?php
-    include_once __DIR__ . '\generales.php';
-    require_once "./../Model/conexion.php";
-    require_once "./../Model/usuarioModel.php";
+<html lang="en">
+<?php
+include_once __DIR__ . '\generales.php';
+require_once "./../Model/conexion.php";
+require_once "./../Model/usuarioModel.php";
 ?>
- <head>
-     <?php
-        links2();
-        ?>
 
-     <?php
-        navBarAdmin();
-        ?>
- </head>
+<head>
+    <?php
+    links2();
+    ?>
+
+    <?php
+    navBarAdmin();
+    ?>
+</head>
 
 
- <body>
-        <!-- end header section -->
+<body>
+    <!-- end header section -->
     </div>
     <div class="main_content">
         <div class="main_content_bg">
@@ -60,20 +61,25 @@
                     </div>
                 </div>
             </div>
-        </section>
         </form>
-        <br>
-        <footer>
-            <?php
-            Footer2();
-            ?>
-        </footer>
-        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </form>
+    <br>
+    <footer style="margin-top:20%">
         <?php
-        allLinks2();
+        Footer2();
         ?>
-    
-  </body>
-    
+    </footer>
+    </div>
+    <?php
+    allLinks2();
+    ?>
+
+</body>
+
 </html>
-    

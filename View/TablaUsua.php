@@ -35,6 +35,7 @@
                 <th scope="col">Rol</th>
                 <th scope="col">Correo</th>
                 <th scope="col">Contraseña</th>
+                <th scope="col">Rol</th>
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>

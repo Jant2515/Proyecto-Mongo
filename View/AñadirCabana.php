@@ -61,8 +61,7 @@
             </div>
         </section>
         </form>
-        <br>
-        <footer>
+        <footer style="margin-top:20%">
             <?php
             Footer2();
             ?>
