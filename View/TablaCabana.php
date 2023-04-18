@@ -82,12 +82,6 @@ $datos = $crud->mostrarDatos();
             ?>
         </tbody>
     </table>
-    <hr>
-    <div class="btagregar">
-        <a  href="AñadirCabana.php" class="textC ">Agregar</a>
-    </div>
-    <br>
-
     <?php
     Footer2();
     ?>

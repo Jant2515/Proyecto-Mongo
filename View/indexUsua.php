@@ -121,7 +121,7 @@ $datos = $comentar->mostrarComentario();
               <img src="images/imgAdmin/icon-admin.png" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">Otros</strong>
-                <h3 class="unit-1-heading">Contactenos</h3>
+                <h3 class="unit-1-heading">Contactar con soporte</h3>
               </div>
             </a>
           </div>

@@ -81,7 +81,6 @@ function navBar()
                   </li>
                   <li><a href="View/discount.php"></a></li>
                   <li><a href="index.php">Sobre</a></li>
-                  <li><a href="index.php">Blog</a></li>
                   <li><a href="index.php">Contactar</a></li>
                   <li><a href="View/login.php">Iniciar Sesion</a></li>
                   <!-- <li><a href="booking.html">Book Online</a></li> -->
@@ -147,7 +146,6 @@ function navBarUsua()
                   </li>
                   <li><a href="discount.php"></a></li>
                   <li><a href="about.php">Sobre</a></li>
-                  <li><a href="blog.php">Blog</a></li>
                   <li><a href="contact.php">Contactar</a></li>
                   <li><a href="login.php">Cerrar Sesion</a></li>
                   <!-- <li><a href="booking.html">Book Online</a></li> -->
@@ -253,7 +251,6 @@ function navBar2()
                   </li>
                   <li><a href="discount.php"></a></li>
                   <li><a href="about.php">Sobre</a></li>
-                  <li><a href="blog.php">Blog</a></li>
                   <li><a href="contact.php">Contactar</a></li>
                   <li><a href="login.php">Cerrar Sesion</a></li>
                   <!-- <li><a href="booking.php">Book Online</a></li> -->

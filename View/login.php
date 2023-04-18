@@ -20,8 +20,8 @@
 		<div class="signup">
 			<form action="../Controller/RegistrarUsuario.php" method="POST">
 				<label for="chk" aria-hidden="true">Registrate</label>
-				<input type="email" name="email" placeholder="Correo" required="">
-				<input type="password" name="password" placeholder="Contraseña" required="">
+				<input type="email" name="email" placeholder="Correo" required="" autocomplete="off">
+				<input type="password" name="password" placeholder="Contraseña" required="" autocomplete="off">
 				<button>Registrate Ya!!</button>
 			</form>
 		</div>
@@ -29,8 +29,8 @@
 		<div class="login">
 			<form action="../Controller/UsuarioController.php" method="POST">
 				<label for="chk" aria-hidden="true">Inicio Sesion</label>
-				<input type="text" id="Correo" name="Correo" placeholder="Correo" required="">
-				<input type="password" id="Contrasena" name="Contrasena" placeholder="Contraseña" required="">
+				<input type="text" id="Correo" name="Correo" placeholder="Correo" required="" autocomplete="off">
+				<input type="password" id="Contrasena" name="Contrasena" placeholder="Contraseña" required="" autocomplete="off">
 				<button>Iniciar Sesion</button>
 			</form>
 		</div>

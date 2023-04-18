@@ -8,7 +8,7 @@ include_once __DIR__ . '\generales.php';
    links2();
     ?>
 </head>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
     <form role="form" action="" method="post">
         <?php
@@ -75,10 +75,14 @@ include_once __DIR__ . '\generales.php';
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Enviar Mensaje" class="btn btn-primary py-2 px-4 text-white">
+                  <button onclick="mostrar()"class="btn btn-primary py-2 px-4 text-white"> Enviar Mensaje </button>
                 </div>
               </div>
-
+<script >
+ function mostrar(){
+  swal("Gracias por comunicarte", "Pronto te responderemos", "success");
+ }
+</script>
   
             </form>
           </div>
