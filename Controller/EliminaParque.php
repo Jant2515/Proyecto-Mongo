@@ -10,7 +10,7 @@
     $respuesta = $crud->eliminar($id);
 
     if ($respuesta->getDeletedCount() > 0) {
-        header("location:./../view/IndexAdmin.php");
+        header("location:./../view/TablaParque.php");
     } else {
         print_r($respuesta);
     }

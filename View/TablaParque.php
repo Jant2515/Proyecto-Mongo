@@ -27,6 +27,12 @@
      <h3 style="text-align: center;">Administracion de Parque Nacionales</h3>
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
+     <br>
+     <br>
+    <div class="btagregar">
+        <a  href="AñadirParque.php" class="textC ">Agregar</a>
+    </div>
+
     <table class="table" style="margin-top: 50px;">
 
         <thead>
@@ -72,11 +78,7 @@
             ?>
         </tbody>
     </table>
-    <hr>
-    <div class="btagregar">
-        <a  href="AñadirParque.php" class="textC ">Agregar</a>
-    </div>
-    <br>
+   
     <footer>
             <?php
             Footer2();

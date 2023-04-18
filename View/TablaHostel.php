@@ -29,6 +29,11 @@ $datos = $crud->mostrarDatos();
     <img src="images/doubledown.gif" alt="" clas="slider"
         style="display: block; margin-left: auto; margin-right: auto;">
     <br>
+    <br>
+     <br>
+    <div class="btagregar">
+        <a  href="AñadirHostels.php" class="textC ">Agregar</a>
+    </div>
 
     <table class="table" style="margin-top: 50px;">
 
@@ -81,11 +86,7 @@ $datos = $crud->mostrarDatos();
             ?>
         </tbody>
     </table>
-    <hr>
-    <div class="btagregar">
-        <a  href="AñadirHostels.php" class="textC ">Agregar</a>
-    </div>
-    <br>
+    
     <footer>
         <?php
         Footer2();

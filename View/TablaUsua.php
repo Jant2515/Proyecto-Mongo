@@ -27,8 +27,15 @@
      <h3 style="text-align: center;">Administracion de Usuarios</h3>
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
-    <table class="table" style="margin-top: 50px;">
 
+     <br>
+     <br>
+    <div class="btagregar">
+        <a  href="AñadirUsua.php" class="textC ">Agregar</a>
+    </div>
+
+    <table class="table" style="margin-top: 50px;">
+    
         <thead>
             <tr>
                 <th scope="col" >ID</th>
@@ -39,6 +46,7 @@
                 <th scope="col">Eliminar</th>
             </tr>
         </thead>
+
         <tbody>
             <?php
             foreach ($datos as $item) {
@@ -72,11 +80,7 @@
             ?>
         </tbody>
     </table>
-    <hr>
-    <div class="btagregar">
-        <a  href="AñadirUsua.php" class="textC ">Agregar</a>
-    </div>
-    <br>
+   
     <footer>
             <?php
             Footer2();

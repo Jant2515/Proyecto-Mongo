@@ -25,6 +25,12 @@ $datos = $crud->mostrarDatos();
    <h3 style="text-align: center;">Administracion de Cabañas</h3>
    <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
    <br>
+   <br>
+     <br>
+    <div class="btagregar">
+        <a  href="AñadirCabana.php" class="textC ">Agregar</a>
+    </div>
+
     <table class="table" style="margin-top: 50px;">
 
         <thead>
