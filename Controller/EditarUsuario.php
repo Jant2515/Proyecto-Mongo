@@ -16,7 +16,7 @@
 
     if ($respuesta->getModifiedCount() > 0 || $respuesta->getMatchedCount() > 0) {
         $_SESSION['mensaje_crud'] = 'update';
-        header("location:./../view/IndexAdmin.php");
+        header("location:./../view/TablaUsua.php");
     } else {
         print_r($respuesta);
     }

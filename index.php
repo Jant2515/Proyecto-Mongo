@@ -155,20 +155,7 @@ include_once __DIR__ . '\View\generales.php';
           </div>
         </div>
 
-        <div class="item">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 mb-5">
-                <img src="View/images/img_2.jpg" alt="Image" class="img-md-fluid">
-              </div>
-              <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
-                <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
-                <p class="">&mdash; <em>Clair Augustin</em>, <a href="#">Traveler</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+       
         <div class="item">
           <div class="container">
             <div class="row">
@@ -195,7 +182,7 @@ include_once __DIR__ . '\View\generales.php';
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="mb-5 text-black">Comenta ahora?</h2>
-            <p class="mb-0"><a href="View/booking.html" class="btn btn-primary py-3 px-5 text-white">Book Now</a></p>
+            <p class="mb-0"><a href="View/Comentario.php" class="btn btn-primary py-3 px-5 text-white">Comentar</a></p>
           </div>
         </div>
       </div>

@@ -7,14 +7,14 @@ require_once "./../Model/usuarioModel.php";
 ?>
 
 <head>
-    <?php
-    links2();
-    ?>
+     <?php
+        links2();
+        ?>
 
-    <?php
-    navBarAdmin();
-    ?>
-</head>
+     <?php
+        navBarUsua();
+        ?>
+ </head>
 
 
 <body>
@@ -39,23 +39,16 @@ require_once "./../Model/usuarioModel.php";
                                             </h2>
                                             <p class="text-black-50 mb-5">Ingrese los datos necesarios</p>
                                             <div class="form-outline form-white  mb-4">
-                                                <label for="inputEmail4" class="form-label">Correo</label>
+                                                <label for="text" class="form-label">Nombre</label>
                                                 <input type="text" class="form-control" id="Correo" name="Correo">
                                             </div>
                                             <div class="form-outline form-white  mb-4">
-                                                <label for="inputPassword4" class="form-label">Contraseña</label>
-                                                <input type="text" class="form-control" id="Contrasena" name="Contrasena">
+                                                <label for="inputPassword4" class="form-label">Comentario</label>
+                                                <textarea name="Coment" id="Coment" cols="40" rows="3"></textarea>
                                             </div>
-                                            <div class="form-outline form-white  mb-4">
-                                                <label for="txtCorreo">Tipo Usuario</label>
-                                                <select class="custom-select" id="Rol">
-                                                    <option value="1">Administrador</option>
-                                                    <option value="2">Usuario</option>
-                                                </select>
-                                            </div>
+                                            <button type="submit" class="btn btn-outline-success btn-lg px-5"
+                                            name="AgregarLugar">Enviar</button>
                                         </div>
-                                        <button type="submit" class="btn btn-outline-success btn-lg px-5"
-                                            name="AgregarLugar">Confirmar</button>
                                     </div>
                                 </form>
                             </div>
@@ -72,7 +65,7 @@ require_once "./../Model/usuarioModel.php";
     </section>
     </form>
     <br>
-    <footer style="margin-top:20%">
+    <footer style="margin-top:10%">
         <?php
         Footer2();
         ?>
