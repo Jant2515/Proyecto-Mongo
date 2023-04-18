@@ -2,7 +2,7 @@
     session_start();
 
     include "../Model/conexion.php";
-    include "../Model/hoteles.php";
+    include "../Model/usuarioModel.php";
     
     $crud = new eliminar();
     $id = $_POST['id'];

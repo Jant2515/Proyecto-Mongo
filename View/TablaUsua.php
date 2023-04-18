@@ -5,8 +5,8 @@
 
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
-    require_once "./../Model/playas.php";
-    $crud = new Crud();
+    require_once "./../Model/usuarioModel.php";
+    $crud = new CrudUsuario();
     $datos = $crud->mostrarDatos();
 
 ?>
@@ -22,9 +22,9 @@
         navBarAdmin();
         ?>
          <br>
-     <img src="images/beach.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
-     <H1 style="text-align: center;color:black;">Playas</H1>
-     <h3 style="text-align: center;">Administracion de Playas</h3>
+     <img src="images/ImgAdmin/Usertable.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+     <H1 style="text-align: center;color:black;">Usuarios</H1>
+     <h3 style="text-align: center;">Administracion de Usuarios</h3>
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
     <table class="table" style="margin-top: 50px;">
@@ -32,9 +32,8 @@
         <thead>
             <tr>
                 <th scope="col" >ID</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">RutaImagen</th>
-                <th scope="col">Descripcion</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Contraseña</th>
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>
@@ -45,11 +44,10 @@
             ?>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php echo $item->nombre; ?></td>
-                    <td><?php echo $item->imagen; ?></td>
-                    <td><?php echo $item->descripcion; ?></td>
+                    <td><?php echo $item->correo; ?></td>
+                    <td><?php echo $item->contrasena; ?></td>
                     <td>
-                        <form action="./EditarPlaya.php" method="POST">
+                        <form action="./EditarUsua.php" method="POST">
 						              <input type="text" hidden value="<?php echo $item->_id ?>" name="id">
 						              <button class="btn btn-outline-warning">Editar
 						              </button>
@@ -58,7 +56,7 @@
                     <td>
                      
                         <div class="btn-group pull-right">
-                        <form action="../Controller/EliminaPlayas.php" method="POST">
+                        <form action="../Controller/EliminaUsua.php" method="POST">
                         <input type="text" name="id" value="<?php echo $item->_id; ?>" hidden>
                         <button class="btn btn-danger">
                             <i class="fa-solid fa-user-xmark"></i> Eliminar
@@ -74,7 +72,7 @@
     </table>
     <hr>
     <div class="btagregar">
-        <a  href="AñadirPlayas.php" class="textC ">Agregar</a>
+        <a  href="AñadirUsua.php" class="textC ">Agregar</a>
     </div>
     <br>
     <footer>

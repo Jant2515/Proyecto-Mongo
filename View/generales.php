@@ -2,7 +2,7 @@
 
 function links()
 {
-    echo  '<title>Travalers &mdash; CR</title>
+    echo  '<title>DestinosCR </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Pasar de aca a abajo a generales-->
@@ -22,7 +22,7 @@ function links()
 
 function links2()
 {
-    echo  '<title>Travalers &mdash; CR</title>
+    echo  '<title>DestinosCR </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Pasar de aca a abajo a generales-->
@@ -40,7 +40,7 @@ function links2()
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/Otros.css">
     <link rel="stylesheet" href="css/style.css">';
 }
 
@@ -70,8 +70,8 @@ function navBar()
                     <a href="index.php">Inicio</a>
                   </li>
                   <li class="has-children">
-                    <a href="View/destination.php">Destinos</a>
-                    <ul class="dropdown">
+                    <a href="index.php">Destinos</a>
+                    <ul class="dropdown disabled">
                     <li><a href="View/ParquesNacio.php">Parques Nacionales</a></li>
                     <li><a href="View/Playas.php">Playas</a></li>
                     <li><a href="View/Hoteles.php">Hoteles</a></li>
@@ -80,10 +80,10 @@ function navBar()
                   </ul>
                   </li>
                   <li><a href="View/discount.php"></a></li>
-                  <li><a href="View/about.php">Sobre</a></li>
-                  <li><a href="View/blog.php">Blog</a></li>
-                  <li><a href="View/contact.php">Contactar</a></li>
-                  <li><a href="View/login.php">Login</a></li>
+                  <li><a href="index.php">Sobre</a></li>
+                  <li><a href="index.php">Blog</a></li>
+                  <li><a href="index.php">Contactar</a></li>
+                  <li><a href="View/login.php">Iniciar Sesion</a></li>
                   <!-- <li><a href="booking.html">Book Online</a></li> -->
                 </ul>
               </nav>
@@ -111,7 +111,72 @@ function navBar()
         </div>
       </header>';
 }
-
+function navBarUsua()
+{
+    echo' <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <header class="site-navbar py-1" role="banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-xl-2">
+              <h1 class="mb-0"><a href="index.php" class="text-black h2 mb-0">DestinosCR</a></h1>
+            </div>
+            <div class="col-10 col-md-8 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+                <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                  <li class="active">
+                    <a href="indexUsua.php">Inicio</a>
+                  </li>
+                  <li class="has-children">
+                    <a href="#">Destinos</a>
+                    <ul class="dropdown">
+                    <li><a href="ParquesNacio.php">Parques Nacionales</a></li>
+                    <li><a href="Playas.php">Playas</a></li>
+                    <li><a href="Hoteles.php">Hoteles</a></li>
+                    <li><a href="Cabañas.php">Cabañas</a></li>
+                    <li><a href="Hostels.php">Hostels</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="discount.php"></a></li>
+                  <li><a href="about.php">Sobre</a></li>
+                  <li><a href="blog.php">Blog</a></li>
+                  <li><a href="contact.php">Contactar</a></li>
+                  <li><a href="login.php">Cerrar Sesion</a></li>
+                  <!-- <li><a href="booking.html">Book Online</a></li> -->
+                </ul>
+              </nav>
+            </div>
+            <div class="col-6 col-xl-2 text-right">
+              <div class="d-none d-xl-inline-block">
+                <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                  <li>
+                    <a href="#" class="pl-0 pr-3 text-black"><span class="icon-tripadvisor"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </header>';
+}
 function navBarAdmin()
 {
     echo' 
@@ -134,26 +199,16 @@ function navBarAdmin()
               <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                   <li class="active">
-                    <a href="indexAdmin.php">Inicio</a>
+                    <a href="./../view/IndexAdmin.php">Inicio</a>
                   </li>
-                  <li><a href="login.php">Cerrar Sesion</a></li>
+                 
                   <!-- <li><a href="booking.php">Book Online</a></li> -->
                 </ul>
               </nav>
             </div>
             <div class="col-6 col-xl-2 text-right">
               <div class="d-none d-xl-inline-block">
-                <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                  <li>
-                    <a href="#" class="pl-0 pr-3 text-black"><span class="icon-tripadvisor"></span></a>
-                  </li>
-                  <li>
-                    <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
+              <a href="login.php">Cerrar Sesion</a>
               </div>
               <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
             </div>
@@ -184,7 +239,7 @@ function navBar2()
               <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                   <li class="active">
-                    <a href="../index.php">Inicio</a>
+                    <a href="./../view/IndexAdmin.php">Inicio</a>
                   </li>
                   <li class="has-children">
                     <a href="destination.php">Destinos</a>
@@ -200,7 +255,7 @@ function navBar2()
                   <li><a href="about.php">Sobre</a></li>
                   <li><a href="blog.php">Blog</a></li>
                   <li><a href="contact.php">Contactar</a></li>
-                  <li><a href="login.php">Login</a></li>
+                  <li><a href="login.php">Cerrar Sesion</a></li>
                   <!-- <li><a href="booking.php">Book Online</a></li> -->
                 </ul>
               </nav>
@@ -237,7 +292,7 @@ function Footer()
       <div class="col-lg-4">
         <div class="mb-5">
           <h3 class="footer-heading mb-4">Sobre DestinosCR</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+          <p>DestinosCR es una agencia de viajes especializada en la planificación y organización de viajes a Costa Rica, uno de los destinos turísticos más populares de América Latina. La empresa se fundó en el año 2022 con el objetivo de ofrecer experiencias únicas y memorables a los viajeros que desean descubrir la belleza natural y cultural de Costa Rica.</p>
         </div>
 
         
@@ -249,20 +304,16 @@ function Footer()
             <h3 class="footer-heading mb-4">Navegar</h3>
           </div>
           <div class="col-md-6 col-lg-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Incio</a></li>
-              <li><a href="#">Destinos</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Sobre</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Politica de Privacidad</a></li>
-              <li><a href="#">Contactenos</a></li>
-            </ul>
-          </div>
+          <ul class="list-unstyled">
+            <li><a href="indexUsua.php">Incio</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="contact.php">Sobre</a></li>
+            <li><a href="#">Contactenos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-6">
+        
+        </div>
         </div>
 
         
@@ -273,8 +324,7 @@ function Footer()
        
 
         <div class="mb-5">
-          <h3 class="footer-heading mb-2">Subscribete Canal DestinosCR</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+          
 
           <form action="#" method="post">
             <div class="input-group mb-3">
@@ -317,7 +367,7 @@ function Footer2()
       <div class="col-lg-4">
         <div class="mb-5">
           <h3 class="footer-heading mb-4">Sobre DestinosCR</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+          <p>DestinosCR es una agencia de viajes especializada en la planificación y organización de viajes a Costa Rica, uno de los destinos turísticos más populares de América Latina. La empresa se fundó en el año 2022 con el objetivo de ofrecer experiencias únicas y memorables a los viajeros que desean descubrir la belleza natural y cultural de Costa Rica.</p>
         </div>
 
         
@@ -330,18 +380,14 @@ function Footer2()
           </div>
           <div class="col-md-6 col-lg-6">
             <ul class="list-unstyled">
-              <li><a href="#">Incio</a></li>
+              <li><a href="indexUsua.php">Incio</a></li>
               <li><a href="#">Destinos</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Sobre</a></li>
+              <li><a href="contact.php">Sobre</a></li>
+              <li><a href="#">Contactenos</a></li>
             </ul>
           </div>
           <div class="col-md-6 col-lg-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Politica de Privacidad</a></li>
-              <li><a href="#">Contactenos</a></li>
-            </ul>
+          
           </div>
         </div>
 
@@ -353,8 +399,7 @@ function Footer2()
        
 
         <div class="mb-5">
-          <h3 class="footer-heading mb-2">Subscribete Canal DestinosCR</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+          
 
           <form action="#" method="post">
             <div class="input-group mb-3">

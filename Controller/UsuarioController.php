@@ -18,11 +18,11 @@
         
         if($respuesta -> Rol == "1"){
 
-            header("Location: ../View/IndexAdmin.php");
+            header("Location: ../View/./../view/IndexAdmin.php");
 
         }else{
 
-            header("Location: ../index.php");
+            header("Location: ../View/indexUsua.php");
 
         }
 

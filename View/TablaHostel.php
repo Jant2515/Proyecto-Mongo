@@ -81,6 +81,11 @@ $datos = $crud->mostrarDatos();
             ?>
         </tbody>
     </table>
+    <hr>
+    <div class="btagregar">
+        <a  href="AñadirHostels.php" class="textC ">Agregar</a>
+    </div>
+    <br>
     <footer>
         <?php
         Footer2();

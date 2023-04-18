@@ -3,7 +3,7 @@
  <?php
     include_once __DIR__ . '\generales.php';
     require_once "./../Model/conexion.php";
-    require_once "./../Model/playas.php";
+    require_once "./../Model/usuarioModel.php";
 ?>
  <head>
      <?php
@@ -24,7 +24,7 @@
             <img src="images/content-bg.jpg" alt="">
         </div>
         <!-- Editar CITA NUEVA -->
-        <form action="../Controller/InsertaPlayas.php" method="post">
+        <form action="../Controller/InsertarUsua.php" method="post">
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -34,21 +34,18 @@
                                 <form action="" method="post" name="login">
                                     <div class="mb-md-5 mt-md-4 pb-5">
                                         <h2 class="fw-bold mb-2 text-uppercase">
-                                            <h2 class="fw-bold mb-2 text-uppercase">Agregar Lugar</h2>
+                                            <h2 class="fw-bold mb-2 text-uppercase">Agregar Usuario</h2>
                                         </h2>
                                         <p class="text-black-50 mb-5">Ingrese los datos necesarios</p>
                                         <div class="form-outline form-white  mb-4">
-                                            <label for="inputEmail4" class="form-label">Nombre del lugar</label>
-                                            <input type="text" class="form-control" id="nombre" name="nombre">
+                                            <label for="inputEmail4" class="form-label">Nombre del Usuario</label>
+                                            <input type="text" class="form-control" id="correo" name="correo">
                                         </div>
                                         <div class="form-outline form-white  mb-4">
-                                            <label for="inputPassword4" class="form-label">Ruta Imagen</label>
-                                            <input type="text" class="form-control" id="imagen"name="imagen">
+                                            <label for="inputPassword4" class="form-label">Ingrese Contraseña</label>
+                                            <input type="text" class="form-control" id="contrasena"name="contrasena">
                                         </div>
-                                        <div class="form-outline form-white  mb-4">
-                                            <label for="inputPassword4" class="form-label">Descripcion</label>
-                                            <input type="text" class="form-control" id="descripcion"name="descripcion">
-                                       
+                                        
                                         </div>
                                         <button type="submit" class="btn btn-outline-success btn-lg px-5"
                                             name="AgregarLugar">Confirmar</button>

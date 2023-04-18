@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    
+
 }
 
 .tarjeta {
@@ -17,8 +17,8 @@
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
     border-radius: 15px;
-   
-    
+
+
 }
 
 .titulo {
@@ -31,7 +31,7 @@
     display: flex;
     background: #ef6c57;
     border-radius: 0 0 15px 15px;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
 }
 
@@ -56,4 +56,31 @@
     height: 222px;
     float: center;
     padding: 15px;
+}
+
+.btnPuntuar {
+    background-color: #ef6c57;
+
+
+}
+.agregar{
+    justify-content: center;
+}
+
+.textC {
+
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: #ef6c57;
+    border-color: #ef6c57;
+    border-radius: 0.25rem;
+
+}
+
+.textC:hover {
+    background-color: #4CAF50;
+    color: rgb(7, 59, 22);
 }

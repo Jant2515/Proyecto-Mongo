@@ -28,7 +28,7 @@ $Lugar = $_POST['Lugar'];
                 <h5 class="card-title">Puntuacion</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Envianos tu puntuacion</h6>
                 <form action="../Controller/Calificaciones.php" method="POST">
-                    <p class="clasificacion">
+                    <p class="clasificacion" >
                         <input id="radio1" type="radio" name="estrellas" value="5">
                         <label for="radio1">★</label>
                         <input id="radio2" type="radio" name="estrellas" value="4">

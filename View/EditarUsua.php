@@ -3,7 +3,7 @@
  <?php
     include_once __DIR__ . '\generales.php';
     include "./../Model/conexion.php";
-    include "./../Model/playas.php";
+    include "./../Model/usuarioModel.php";
     
     $crud = new Editar();
 	$id = $_POST['id'];
@@ -32,14 +32,13 @@
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                         <div class="card bg-light text-black" style="border-radius: 1rem;">
                             <div class="card-body p-5 text-center">
-                            <form action="./../Controller/EditarPlayas.php" method="POST">
+                            <form action="./../Controller/EditarUsua.php" method="POST">
 						        <input type="text" hidden value="<?php echo $idMongo ?>" name="id">
-						        <label for="nombre">Nombre</label>
-						        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $datos->nombre ?>">
-						        <label for="imagen">Imagen</label>
-						        <input type="text" class="form-control" id="imagen" name="imagen" value="<?php echo $datos->imagen ?>">
-						        <label for="descripcion">Descripcion</label>
-						        <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $datos->descripcion ?>">
+						        <label for="nombre">Usuario</label>
+						        <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $datos->correo ?>">
+						        <label for="imagen">Contraseña</label>
+						        <input type="text" class="form-control" id="contrasena" name="contrasena" value="<?php echo $datos->contrasena ?>">
+						       
 						        <button style="margin-top:10px"  class = "btn btn-outline-success">Actualizar
 						        </button>
 					        </form>

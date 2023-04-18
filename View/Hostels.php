@@ -27,23 +27,33 @@
      <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
      <br>
      <br>
-     <form action="Post" class="TD" style="flex-wrap: wrap; margin-top: 20px;">
-     <?php
-        foreach($datos as $item) {
-     ?>
+     <div class="TD" style="flex-wrap: wrap; margin-top: 20px;">
+      <?php
+      foreach ($datos as $item) {
+         ?>
 
          <div class="tarjeta" style="margin-top: 20px; display: inline-block;">
-             <div class="titulo"><?php echo $item->nombre; ?></div>
-             <img class="Img3" src="<?php echo $item->imagen; ?>" alt="muestra">
-             <p style="display: flex; justify-content:center;"><?php echo $item->descripcion; ?> </p>
-             <div class="pie">
-                 <a href="calificacion.php">Puntuar Lugar</a>
-             </div>
+            <div class="titulo">
+               <?php echo $item->nombre; ?>
+            </div>
+            <img class="Img3" src="<?php echo $item->imagen; ?>" alt="muestra">
+            <p style="display: flex; justify-content:center;">
+               <?php echo $item->descripcion; ?>
+            </p>
+            <div class="pie">
+               <form action="calificacion.php" method="POST" class="TD"
+                  style="flex-wrap: wrap; margin-top: 20px; text-align: center;">
+                  <input type="text" name="Lugar" id="Lugar" value="<?php echo $item->nombre; ?>" hidden>
+                  <a href="calificacion.php" style=""><button class="btn success" style="color:white;">Puntuar
+                        Lugar</button></a>
+               </form>
+            </div>
          </div>
-     <?php
-        }
-     ?>
-     </form>
+
+         <?php
+      }
+      ?>
+   </div>
      <br>
      <footer>
          <?php

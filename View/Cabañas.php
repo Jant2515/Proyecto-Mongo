@@ -39,9 +39,11 @@ $datos = $crud->mostrarDatos();
                <?php echo $item->descripcion; ?>
             </p>
             <div class="pie">
-               <form action="calificacion.php" method="POST" class="TD" style="flex-wrap: wrap; margin-top: 20px;">
+               <form action="calificacion.php" method="POST" class="TD"
+                  style="flex-wrap: wrap; margin-top: 20px; text-align: center;">
                   <input type="text" name="Lugar" id="Lugar" value="<?php echo $item->nombre; ?>" hidden>
-                  <a href="calificacion.php"><button class="btn success">Puntuar Lugar</button></a>
+                  <a href="calificacion.php" style=""><button class="btn success" style="color:white;">Puntuar
+                        Lugar</button></a>
                </form>
             </div>
          </div>

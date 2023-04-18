@@ -12,7 +12,7 @@ include_once __DIR__ . '\generales.php';
 <body>
     <form role="form" action="" method="post">
         <?php
-        navBar2();
+        navBarUsua();
         ?>
         </header>
 

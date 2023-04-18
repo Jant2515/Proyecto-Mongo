@@ -10,7 +10,7 @@
     $respuesta = $crud->eliminar($id);
 
     if ($respuesta->getDeletedCount() > 0) {
-        header("location:../index.php");
+        header("location:./../view/IndexAdmin.php");
     } else {
         print_r($respuesta);
     }

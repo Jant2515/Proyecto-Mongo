@@ -14,7 +14,7 @@
 
     if ($respuesta->getInsertedId() > 0) {
         $_SESSION['mensaje_crud'] = 'insert';
-        header("location:../index.php"); 
+        header("location:./../view/IndexAdmin.php"); 
     } else {
         print_r($respuesta);
     }

@@ -21,6 +21,12 @@
 <?php
         navBarAdmin();
         ?>
+           <br>
+     <img src="images/nationalPark.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+     <H1 style="text-align: center;color:black;">Parques Nacionales</H1>
+     <h3 style="text-align: center;">Administracion de Parque Nacionales</h3>
+     <img src="images/doubledown.gif" alt="" clas="slider" style="display: block; margin-left: auto; margin-right: auto;">
+     <br>
     <table class="table" style="margin-top: 50px;">
 
         <thead>
@@ -66,6 +72,11 @@
             ?>
         </tbody>
     </table>
+    <hr>
+    <div class="btagregar">
+        <a  href="AñadirParque.php" class="textC ">Agregar</a>
+    </div>
+    <br>
     <footer>
             <?php
             Footer2();

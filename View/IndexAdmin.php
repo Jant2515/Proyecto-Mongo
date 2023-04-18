@@ -110,11 +110,11 @@ include_once __DIR__ . '\generales.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="TablaUsua.php" class="unit-1 text-center">
               <img src="images/imgAdmin/icon-admin.png" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">Otros</strong>
-                <h3 class="unit-1-heading">Actualize, Agregue y Elimine cuando quieras</h3>
+                <strong class="text-primary mb-2 d-block">Usuarios</strong>
+                <h3 class="unit-1-heading">Administrador</h3>
               </div>
             </a>
           </div>

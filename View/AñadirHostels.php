@@ -11,7 +11,7 @@
         ?>
 
      <?php
-        navBar2();
+        navBarAdmin();
         ?>
  </head>
 

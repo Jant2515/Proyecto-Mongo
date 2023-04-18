@@ -1,15 +1,14 @@
 <?php 
     require_once "./../Model/conexion.php";
-    require_once "./../Model/playas.php";
+    require_once "./../Model/usuarioModel.php";
 
 
     
     $Crud = new inserta();
 
     $datos = array(
-        "nombre" => $_POST['nombre'],
-        "imagen" => $_POST['imagen'],
-        "descripcion" => $_POST['descripcion']
+        "correo" => $_POST['correo'],
+        "contrasena" => $_POST['contrasena'],
     );
 
     $respuesta = $Crud->insertarDatos($datos);
