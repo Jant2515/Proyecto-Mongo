@@ -23,7 +23,6 @@
         <div class="main_content_bg">
             <img src="images/content-bg.jpg" alt="">
         </div>
-        <!-- Editar CITA NUEVA -->
         <form action="../Controller/InsertaCabañas.php" method="post">
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">

@@ -26,7 +26,7 @@ require_once "./../Model/usuarioModel.php";
         </div>
         <!-- Editar CITA NUEVA -->
         <form action="../Controller/InsertarUsua.php" method="post">
-        <section class="vh-100 gradient-custom">
+            <section class="vh-100 gradient-custom">
                 <div class="container py-5 h-100">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -44,26 +44,27 @@ require_once "./../Model/usuarioModel.php";
                                             </div>
                                             <div class="form-outline form-white  mb-4">
                                                 <label for="inputPassword4" class="form-label">Contraseña</label>
-                                                <input type="text" class="form-control" id="Contrasena" name="Contrasena">
+                                                <input type="text" class="form-control" id="Contrasena"
+                                                    name="Contrasena">
                                             </div>
                                             <div class="form-outline form-white  mb-4">
                                                 <label for="txtCorreo">Tipo Usuario</label>
-                                                <select class="custom-select" id="Rol">
-                                                    <option value="1">Administrador</option>
-                                                    <option value="2">Usuario</option>
+                                                <select class="custom-select" id="Rol" name="Rol">
+                                                    <option name="Opcion" value="1">Administrador</option>
+                                                    <option name="Opcion" value="2">Usuario</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-outline-success btn-lg px-5"
                                             name="AgregarLugar">Confirmar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                </div>
         </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
     </div>
     </div>
     </div>

@@ -40,7 +40,10 @@ $idMongo = $datos->_id;
 						        <label for="text">Contraseña</label>
 						        <input type="text" class="form-control" id="Contrasena" name="Contrasena" value="<?php echo $datos->Contrasena ?>">
                                 <label for="text">Rol</label>
-						        <input type="text" class="form-control" id="Rol" name="Rol" value="<?php echo $datos->Rol ?>">
+						        <select class="custom-select" id="Rol" name="Rol" value="<?php echo $datos->Rol?>">
+                                    <option name="Opcion" value="1">Administrador</option>
+                                    <option name="Opcion" value="2">Usuario</option>
+                                </select>
 						        <button style="margin-top:10px"  class = "btn btn-outline-success">Actualizar</button>
                             </form>
                         </div>
