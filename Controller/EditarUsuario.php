@@ -8,7 +8,7 @@
     $datos = array(
         "correo" => $_POST['correo'],
         "contrasena" => $_POST['contrasena'],
-      
+        "Rol" => $_POST['Rol'],
     );
 
     $respuesta = $Crud->actualizar($id, $datos);

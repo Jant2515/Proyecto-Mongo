@@ -35,10 +35,11 @@
                             <form action="./../Controller/EditarUsua.php" method="POST">
 						        <input type="text" hidden value="<?php echo $idMongo ?>" name="id">
 						        <label for="nombre">Usuario</label>
-						        <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $datos->correo ?>">
-						        <label for="imagen">Contraseña</label>
-						        <input type="text" class="form-control" id="contrasena" name="contrasena" value="<?php echo $datos->contrasena ?>">
-						       
+						        <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $datos->Correo ?>">
+						        <label for="text">Contraseña</label>
+						        <input type="text" class="form-control" id="contrasena" name="contrasena" value="<?php echo $datos->Contrasena ?>">
+                                <label for="text">Rol</label>
+						        <input type="text" class="form-control" id="contrasena" name="contrasena" value="<?php echo $datos->Rol ?>">
 						        <button style="margin-top:10px"  class = "btn btn-outline-success">Actualizar
 						        </button>
 					        </form>
