@@ -32,6 +32,7 @@
         <thead>
             <tr>
                 <th scope="col" >ID</th>
+                <th scope="col">Rol</th>
                 <th scope="col">Correo</th>
                 <th scope="col">Contraseña</th>
                 <th scope="col">Editar</th>
@@ -44,8 +45,9 @@
             ?>
                 <tr>
                     <th scope="row"></th>
-                    <td><?php echo $item->correo; ?></td>
-                    <td><?php echo $item->contrasena; ?></td>
+                    <td><?php echo $item->Rol; ?></td>
+                    <td><?php echo $item->Correo; ?></td>
+                    <td><?php echo $item->Contrasena; ?></td>
                     <td>
                         <form action="./EditarUsua.php" method="POST">
 						              <input type="text" hidden value="<?php echo $item->_id ?>" name="id">

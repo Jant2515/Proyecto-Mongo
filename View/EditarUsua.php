@@ -34,10 +34,12 @@
                             <div class="card-body p-5 text-center">
                             <form action="./../Controller/EditarUsua.php" method="POST">
 						        <input type="text" hidden value="<?php echo $idMongo ?>" name="id">
-						        <label for="nombre">Usuario</label>
-						        <input type="text" class="form-control" id="usuario" name="usuario" value="<?php echo $datos->correo ?>">
-						        <label for="imagen">Contraseña</label>
-						        <input type="text" class="form-control" id="contrasena" name="contrasena" value="<?php echo $datos->contrasena ?>">
+                                <label for="Rol">Rol de Usuario</label>
+						        <input type="number" class="form-control" id="Rol" name="Rol" value="<?php echo $datos->Rol ?>">
+						        <label for="Usuario">Usuario</label>
+						        <input type="text" class="form-control" id="Usuario" name="Usuario" value="<?php echo $datos->Correo ?>">
+						        <label for="Contrasena">Contraseña</label>
+						        <input type="text" class="form-control" id="Contrasena" name="Contrasena" value="<?php echo $datos->Contrasena ?>">
 						       
 						        <button style="margin-top:10px"  class = "btn btn-outline-success">Actualizar
 						        </button>

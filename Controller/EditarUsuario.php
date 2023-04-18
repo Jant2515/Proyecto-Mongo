@@ -6,8 +6,9 @@
 
     $id = $_POST['id'];
     $datos = array(
-        "correo" => $_POST['correo'],
-        "contrasena" => $_POST['contrasena'],
+        "Correo" => $_POST['Correo'],
+        "Contrasena" => $_POST['Contrasena'],
+        "Rol"=> $_POST['Rol']
       
     );
 

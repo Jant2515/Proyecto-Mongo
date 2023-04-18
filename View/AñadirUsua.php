@@ -38,12 +38,16 @@
                                         </h2>
                                         <p class="text-black-50 mb-5">Ingrese los datos necesarios</p>
                                         <div class="form-outline form-white  mb-4">
+                                            <label for="inputEmail4" class="form-label">Rol del Usuario</label>
+                                            <input type="number" class="form-control" id="Rol" name="Rol" placeholder="">
+                                        </div>
+                                        <div class="form-outline form-white  mb-4">
                                             <label for="inputEmail4" class="form-label">Nombre del Usuario</label>
-                                            <input type="text" class="form-control" id="correo" name="correo">
+                                            <input type="text" class="form-control" id="Correo" name="Correo">
                                         </div>
                                         <div class="form-outline form-white  mb-4">
                                             <label for="inputPassword4" class="form-label">Ingrese Contraseña</label>
-                                            <input type="text" class="form-control" id="contrasena"name="contrasena">
+                                            <input type="text" class="form-control" id="Contrasena"name="Contrasena">
                                         </div>
                                         
                                         </div>

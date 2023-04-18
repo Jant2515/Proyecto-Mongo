@@ -129,49 +129,72 @@ include_once __DIR__ . '\View\generales.php';
     <!-- <div class="site-section bg-light">
       
     </div> -->
+    <div class="site-section block-13 bg-light">
+  
 
-
- 
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center">
-            <h2 class="font-weight-light text-black">Our Blog</h2>
-            <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-          </div>
+  <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7">
+          <h2 class="font-weight-light text-black text-center">Comentarios</h2>
         </div>
-        <div class="row mb-3 align-items-stretch">
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="View/images/hero_bg_1.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="View/images/hero_bg_2.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+      </div>
+
+      <div class="nonloop-block-13 owl-carousel">
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-5">
+                <img src="View/images/img_1.jpg" alt="Image" class="img-md-fluid">
+              </div>
+              <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
+                <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-outline-primary border-2 py-3 px-5">View All Blog Posts</a>
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-5">
+                <img src="View/images/img_2.jpg" alt="Image" class="img-md-fluid">
+              </div>
+              <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
+                <p class="">&mdash; <em>Clair Augustin</em>, <a href="#">Traveler</a></p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-5">
+                <img src="View/images/img_4.jpg" alt="Image" class="img-md-fluid">
+              </div>
+              <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
+                <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
+
+
+
     
     <div class="site-section border-top">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
-            <h2 class="mb-5 text-black">Want To Travel With Us?</h2>
+            <h2 class="mb-5 text-black">Comenta ahora?</h2>
             <p class="mb-0"><a href="View/booking.html" class="btn btn-primary py-3 px-5 text-white">Book Now</a></p>
           </div>
         </div>
